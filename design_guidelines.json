@@ -1,0 +1,131 @@
+{
+  "identity": {
+    "persona": "E1",
+    "tone": "The Oracle - Authoritative, High-Frequency, Wealth-Oriented",
+    "metaphor": "The War Room meets The Crystal Ball",
+    "emotional_goal": "Confidence, Insight, Unfair Advantage"
+  },
+  "typography": {
+    "primary_font": "Unbounded",
+    "secondary_font": "Manrope",
+    "mono_font": "JetBrains Mono",
+    "usage": {
+      "headings": "Unbounded, weights 700/900, tracking-tight",
+      "body": "Manrope, weights 400/500, leading-relaxed",
+      "data_display": "JetBrains Mono, weight 500, tracking-wide"
+    },
+    "import_url": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;700&family=Unbounded:wght@400;700;900&display=swap"
+  },
+  "colors": {
+    "palette_name": "Toxic Wealth",
+    "mode": "dark",
+    "base": {
+      "background": "#020402",
+      "surface": "#0A120E",
+      "surface_highlight": "#111F18",
+      "border": "#1F3328"
+    },
+    "accents": {
+      "primary": "#BDFF00",
+      "primary_foreground": "#000000",
+      "secondary": "#9D00FF",
+      "secondary_foreground": "#FFFFFF",
+      "destructive": "#FF2A00",
+      "warning": "#FFB800",
+      "success": "#00FF94"
+    },
+    "text": {
+      "primary": "#F0F2F0",
+      "secondary": "#8A9E91",
+      "muted": "#4A5E51"
+    },
+    "gradients": {
+      "hero": "linear-gradient(135deg, #020402 0%, #0A120E 100%)",
+      "glow": "radial-gradient(circle at center, rgba(189, 255, 0, 0.15) 0%, transparent 70%)",
+      "beam": "linear-gradient(90deg, transparent, rgba(189, 255, 0, 0.5), transparent)"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": {
+      "backdrop_blur": "blur(12px)",
+      "background": "rgba(10, 18, 14, 0.7)",
+      "border": "1px solid rgba(189, 255, 0, 0.1)"
+    },
+    "borders": {
+      "default": "1px solid #1F3328",
+      "active": "1px solid #BDFF00",
+      "radius": "0px"
+    },
+    "shadows": {
+      "card": "0 4px 24px -12px rgba(0, 0, 0, 0.5)",
+      "glow": "0 0 20px rgba(189, 255, 0, 0.2)"
+    },
+    "textures": {
+      "noise": "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E\")"
+    }
+  },
+  "layout_strategy": {
+    "marketing": {
+      "grid": "Tetris Grid (Grid Cols 12)",
+      "spacing": "Generous (gap-8 to gap-12)",
+      "container": "max-w-7xl mx-auto px-6"
+    },
+    "dashboard": {
+      "grid": "Control Room Grid (Grid Cols 4)",
+      "spacing": "Tight (gap-4)",
+      "container": "w-full h-screen overflow-hidden p-4"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#BDFF00] text-black font-bold uppercase tracking-wider hover:bg-[#D4FF4D] transition-all duration-200 sharp-edges shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)]",
+      "secondary": "bg-transparent border border-[#1F3328] text-[#F0F2F0] hover:border-[#BDFF00] hover:text-[#BDFF00] transition-all duration-200"
+    },
+    "cards": {
+      "dashboard": "bg-[#0A120E]/80 backdrop-blur-md border border-[#1F3328] hover:border-[#BDFF00]/50 transition-colors duration-300",
+      "feature": "relative overflow-hidden group bg-[#0A120E] border border-[#1F3328] p-8"
+    },
+    "inputs": {
+      "style": "bg-[#020402] border border-[#1F3328] focus:border-[#BDFF00] focus:ring-1 focus:ring-[#BDFF00] text-[#F0F2F0] placeholder-[#4A5E51]"
+    }
+  },
+  "image_urls": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1762278804930-fd04fc7111c1?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "description": "Abstract glowing green lines on dark background - Use for Hero Section overlay or background",
+      "category": "background"
+    },
+    "analysis_context": {
+      "url": "https://images.unsplash.com/photo-1758518730037-a16581a040e8?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "description": "Businesswoman discussing reports - Use for 'About' or 'Features' section showing human analysis",
+      "category": "content"
+    },
+    "success_metaphor": {
+      "url": "https://images.unsplash.com/photo-1636142466028-8c6c7cd616b7?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "description": "Tall building windows - Use for 'Growth' or 'Results' section",
+      "category": "content"
+    },
+    "ai_visualization": {
+      "url": "https://images.unsplash.com/photo-1762279388956-1c098163a2a8?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "description": "Abstract neon lines digital landscape - Use for AI/Tech specific features",
+      "category": "content"
+    }
+  },
+  "instructions_to_main_agent": [
+    "INSTALL: yarn add framer-motion lucide-react recharts sonner clsx tailwind-merge @radix-ui/react-slot",
+    "SETUP: Configure tailwind.config.js to use the 'Toxic Wealth' color palette defined in colors section.",
+    "FONTS: Add the Google Fonts import to index.css immediately.",
+    "LAYOUT: For the Dashboard, strictly follow the 'Control Room' grid. No scrolling on the main dashboard view if possible - make it fit the viewport like a trading terminal.",
+    "COMPONENTS: Do not use rounded corners (rounded-none) for a sharper, more financial/technical look.",
+    "MOTION: Use framer-motion for entrance animations. Stagger children in lists.",
+    "CHARTS: Use Recharts. Style them with the 'Toxic Lime' (#BDFF00) for positive trends and 'Destructive Red' (#FF2A00) for negative.",
+    "TESTING: Add data-testid to all interactive elements (buttons, inputs, cards)."
+  ],
+  "universal_guidelines": [
+    "Avoid gradients for backgrounds, use them only for subtle glows or text accents.",
+    "Never use pure black (#000000) for backgrounds, use the defined #020402.",
+    "Ensure all text has sufficient contrast. Use the 'text.secondary' color for labels, never opacity.",
+    "Use 'sonner' for all toast notifications.",
+    "Create a 'Layout' component that handles the sidebar/header structure for the dashboard."
+  ]
+}
