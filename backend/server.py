@@ -37,6 +37,16 @@ ACCESS_TOKEN_EXPIRE_HOURS = 24
 # LLM Config
 EMERGENT_LLM_KEY = os.environ.get('EMERGENT_LLM_KEY')
 
+# Stripe Config
+STRIPE_API_KEY = os.environ.get('STRIPE_API_KEY')
+
+# Subscription Plans
+SUBSCRIPTION_PLANS = {
+    "starter": {"name": "Starter", "price": 0.0, "analyses_limit": 3, "reports_limit": 3},
+    "pro": {"name": "Pro", "price": 49.0, "analyses_limit": -1, "reports_limit": -1},
+    "enterprise": {"name": "Enterprise", "price": 199.0, "analyses_limit": -1, "reports_limit": -1}
+}
+
 app = FastAPI(title="MarketPulse AI")
 api_router = APIRouter(prefix="/api")
 security = HTTPBearer()
